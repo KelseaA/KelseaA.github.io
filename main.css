@@ -1,6 +1,8 @@
 body{
 	background-color: #E0EBEB;
 	color: #0F1F2E;
+	font-family:georgia, serif;
+	font-size:16px;
 }
 h1{
 	font-size: 3em;
