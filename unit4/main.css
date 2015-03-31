@@ -11,9 +11,12 @@ h1{
 }
 nav{
 	float: right;
+	margin-right: 10em;
+	margin-top: 9em;
 }
 section{
 	float:left;
+	margin-left: 10em;
 }
 #slogan{
 	font-size: 1.5em;
@@ -29,10 +32,12 @@ section{
 #leopard{
 	width: 10em;
 	height: 10em;
+	clear: both;
 }
 #whales{
 	width: 10em;
 	height: 10em;
+	clear: right;
 }
 #email{
 	clear: both;
