@@ -37,18 +37,20 @@ a{
 }
 
 h1{
-	text-align: center;
 	font-size: 8.5em;
-	margin-top: 10%;
+	margin-top: 20%;
 }
 
 .home{
 	text-align: justify;
-	width: 40%;
-	margin: 0 auto;
 	font-size: 1.5em;
 	line-height: 1.75em;
 	padding-bottom: 10%;
+}
+
+.wrapper{
+	width: 40%;
+	margin: 0 auto;
 }
 
 .about{
@@ -61,7 +63,7 @@ h1{
 }
 
 #info{
-	margin: 7em 0 0 0;
+	margin-top: 15%;
 }
 
 #headshot{
