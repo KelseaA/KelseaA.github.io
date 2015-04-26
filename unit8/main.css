@@ -147,11 +147,6 @@ h2{
 	text-align: center;
 }
 
-#about-container{
-	min-height: 100%;
-	position: relative;
-}
-
 footer{
 	position: absolute;
 	bottom: 0;
@@ -299,8 +294,12 @@ label{
 		margin-bottom: 5%;
 	}
 
-	nav > #nav-list {
-		max-height: 0;
+	#resume, .about, #main-content{
+		margin-top: 10%;
+	}
+
+	#nav-list {
+		min-height: 55px;
 		overflow: hidden;
 	}
 
@@ -333,6 +332,10 @@ label{
 	input:checked + nav #nav-list a{
 		visibility: visible;
 		display: block;
+		position: relative;
+	}
+
+	footer{
 		position: relative;
 	}
 }	
