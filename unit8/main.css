@@ -338,6 +338,10 @@ label{
 	footer{
 		position: relative;
 	}
+
+	#info{
+		font-size: .9em;
+	}
 }	
 
 @media only screen and (max-width: 388px){
@@ -347,5 +351,9 @@ label{
 
 	h2{
 		font-size: 1.25em;
+	}
+
+	#info{
+		font-size: .8em;
 	}
 }
