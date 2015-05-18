@@ -1,0 +1,359 @@
+* { margin:0; padding:0; box-sizing:border-box;
+} 
+
+body{
+	font-size: 16px;
+	color: #333;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+nav{
+	background: #009999;
+	padding: 1.5%;
+	text-align: right;
+}
+
+nav a{
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	padding: .75em;
+	font-size: 1.5em;
+	margin: 0 .5em 0 .5em;
+}
+
+nav a:hover{
+	background: #17E5E5;
+}
+
+.box-link:hover{
+	background: #17E5E5;
+}
+
+a{
+	text-decoration: none;
+	color: #009999;
+}
+
+h1{
+	font-size: 4em;
+}
+
+h2{
+	font-weight: normal;
+	padding-top: .5em;
+}
+
+#main-content{
+	margin-top: 5%;
+	text-align: center;
+}
+
+#tagline{
+	position: absolute;
+	font-size: 80%;
+	text-align: center;
+	padding: 4% 0;
+	margin-top: 40%;
+	background: rgba(255,255,255,.9);
+	width:100%;
+}
+
+#front-image{
+	width: 25%;
+	position: relative;
+	float: left;
+	text-align: center;
+	margin-left: 22%;
+}
+
+#cover-image{
+	width: 100%;
+}
+
+#nav-container{
+	width: 27.5%;
+	float: right;
+	margin-right: 22%;
+}
+
+.nav-image{
+	width: 100%;
+}
+
+.box-link{
+	position: absolute;
+	color: #333;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 6% 0;
+	background: rgba(255,255,255,.9);
+	width:100%;
+	margin-top: 45%;
+}
+
+#index-link, #resume-link{
+	margin-top: 77%;
+}
+
+#box-index, #box-portfolio{
+	margin-bottom: 10%;
+}
+
+#column1{
+	float: left;
+	width: 47%;
+	position: relative;
+	margin-right: 1.5%;
+}
+
+#column2{
+	float: right;
+	width: 47%;
+	position: relative;
+	margin-left: 1.5%;
+}
+
+.about{
+	width: 55%;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 1.5em;
+	line-height: 1.75em;
+	padding-bottom: 10%;
+}
+
+#info{
+	margin: 19% 0;
+}
+
+#headshot{
+	float: left;
+	width: 33.33%;
+	padding-right: 1.5em;
+}
+
+#resume{
+	border: .175em solid #333;
+	width: 50%;
+}
+
+#resume-container{
+	margin-top: 3%;
+	text-align: center;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	border-top: .25em solid #333;
+	width: 100%;
+	text-align: center;
+	background: #fff;
+	height: 20px;
+}
+
+.social{
+	width: 50px;
+	margin: 0 1em;
+}
+
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+input {
+	visibility: hidden;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+
+label{
+	display: none;
+	position: absolute;
+	font-size: 1.2em;
+	top: .7em;
+	right: 12px;
+	z-index: 2;
+}
+
+@media only screen and (max-width: 1564px){
+	h1{
+		font-size: 3.5em;
+	}
+	#front-image{
+		width: 30%;
+		margin-left: 18%;
+	}
+
+	#nav-container{
+		width: 32%;
+		margin-right: 18%;
+	}
+
+}
+
+@media only screen and (max-width: 1135px){
+	h1{
+		font-size: 3em;
+	}
+
+	h2{
+		font-size: 1.25em;
+	}
+
+	#front-image{
+		width: 40%;
+		margin-left: 8%;
+	}
+
+	#nav-container{
+		width: 42%;
+		margin-right: 8%;
+	}
+
+	.about{
+		width: 80%;
+	}
+
+	#resume{
+		width: 75%;
+	}
+}	
+
+@media only screen and (max-width: 749px){
+	h1{
+		font-size: 4em;
+	}
+
+	h2{
+		font-size: 1.5em;
+	}
+
+	#front-image{
+		width: 80%;
+		float: none;
+		margin: 0 auto;
+		margin-bottom: 5%;
+		padding: 0;
+	}
+
+	#nav-container{
+		width: 80%;
+		float: none;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	#headshot{
+		width: 40%;
+	}
+
+	#resume{
+		width: 85%;
+	}
+
+	nav a{
+		font-size: 1.25em;
+	}
+}	
+
+@media only screen and (max-width: 495px){
+	h1{
+		font-size: 3em;
+	}
+
+	h2{
+		font-size: 1.25em;
+	}
+
+	#headshot{
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		padding: 0;
+		display: block;
+	}
+
+	#info{
+		float: none;
+		width: 95%;
+		padding: 0;
+		margin: 0 auto;
+		margin-bottom: 5%;
+	}
+
+	#resume, .about, #main-content{
+		margin-top: 10%;
+	}
+
+	#nav-list {
+		min-height: 55px;
+		overflow: hidden;
+	}
+
+	#nav-list > a {
+		display: none;
+	}
+
+	label{
+		display: inline-block;
+		font-size: 2em;
+		margin-top: -.35em;
+	}
+
+	input{
+		display: block;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 20px;
+		cursor: pointer;
+		z-index: 3;
+	}
+
+	input:checked + nav #nav-list{
+		max-height: 300px;
+		padding-right: 1.5em;
+	}
+
+	input:checked + nav #nav-list a{
+		visibility: visible;
+		display: block;
+		position: relative;
+	}
+
+	footer{
+		position: relative;
+	}
+
+	#info{
+		font-size: .9em;
+	}
+}	
+
+@media only screen and (max-width: 388px){
+	h1{
+		font-size: 2.5em;
+	}
+
+	h2{
+		font-size: 1.25em;
+	}
+
+	#info{
+		font-size: .8em;
+	}
+}
