@@ -1,0 +1,70 @@
+/*light grey #f0f0f5*/
+* { margin:0; padding:0; box-sizing:border-box;
+} 
+body{
+	font-color: rgba(51, 51, 51, .75);
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+.splash{
+	background-image: url(images/background-image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 55em;
+}
+h1{
+	font-size: 3.25em;
+	padding: 6em 0 0 3.5em;
+}
+.splash p{
+	font-size: 2em;
+	font-weight: 600;
+	padding: 0em 0 0 5.75em;
+}
+nav{
+	background-color: #333;
+	margin-bottom: 0;
+	overflow: visible;
+	line-height: 1.5em;
+	text-align: center;
+}
+nav a{
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	padding: .75em;
+	font-size: 1.5em;
+	margin: 0 .5em 0 .5em;
+}
+main{
+	width: 65%;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+h2{
+	padding-top: .5em;
+	border-bottom: solid rgba(51, 51, 51, .75) .1em;
+}
+main section{
+	margin-bottom: 3em;
+}
+.services{
+
+}
+.portfolio{
+/*	background-color: #e4e4e4;*/
+}
+.about{
+
+}
+.testimonials{
+
+}
+.contact{
+
+}
+footer{
+	background-color: #333;
+	height: 3em;
+}
