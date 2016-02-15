@@ -6,7 +6,7 @@ html {
 }
 body{
 	font-size: 16px;
-/*	background-color: LightGray;*/
+	background-color: #fff;
 	color: #333;
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -22,7 +22,7 @@ ul{
     margin: 0 auto;
     width: 70%;
 }
-.links, h3{
+.links, h3 {
 	text-align: center;
 }
 h1, h2, h3, nav{
@@ -33,6 +33,12 @@ hr{
 	width: 70%;
 	margin-bottom: 3rem;
 	color: #333;
+}
+.column1{
+	width: 45%;
+}
+a{
+	color: #162440;
 }
 
 
@@ -45,14 +51,14 @@ hr{
 	height: 30em;
 }
 .name-text{
-	padding: 9rem 0 0 10rem;
+	padding: 11rem 0 0 10rem;
 }
 h1{
 	font-size: 4rem;
 	margin: 0;
 }
 h2{
-	font-size: 2rem;
+	font-size: 2.75rem;
 	margin: 0;
 }
 
@@ -84,7 +90,21 @@ nav .links li:hover{
 h3{
 	font-size: 2rem;
 }
+.projects img{
+	height: 20rem;
+	border: solid 1px #333;
+	margin: 1rem;
+}
+.project-images{
+	text-align: center;
+}
 
+
+/*about area*/
+
+/*skills area*/
+
+/*contact area*/
 
 /*footer*/
 footer{
