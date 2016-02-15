@@ -6,7 +6,7 @@ html {
 }
 body{
 	font-size: 16px;
-	background-color: LightGray;
+/*	background-color: LightGray;*/
 	color: #333;
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -20,18 +20,23 @@ ul{
 .content {
     padding: 0 0.938rem;
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
 }
 .links, h3{
 	text-align: center;
 }
 h1, h2, h3, nav{
 	font-family: 'Dosis', sans-serif;
-	color: #3e5e90;
+	color: #162440;
+}
+hr{
+	width: 70%;
+	margin-bottom: 3rem;
+	color: #333;
 }
 
-/*main image*/
 
+/*main image*/
 .name{
 	background-height: 100rem;
 	background-image: url('../images/banner.jpg');
@@ -51,17 +56,16 @@ h2{
 	margin: 0;
 }
 
-/*navigation*/
 
+/*navigation*/
 nav{
-	background-color: #3e5e90;
+	background-color: #162440;
 	height: 4rem;
 }
 nav .links{
 	font-size: 1.25rem;
 	padding-left: 0;
 	margin-top: .5rem;
-/*	text-transform: uppercase;*/
 	margin: 0;
 }
 nav .links li{
@@ -72,3 +76,20 @@ nav .links li{
 	margin: .75rem .75rem 0 .75rem;
 	border-radius: 2rem;
 }
+nav .links li:hover{
+	background-color: #b5d2e9;
+}
+
+/*project area*/
+h3{
+	font-size: 2rem;
+}
+
+
+/*footer*/
+footer{
+	height: 4rem;
+	background-color: #162440; 
+	margin-top: 4rem;
+}
+
