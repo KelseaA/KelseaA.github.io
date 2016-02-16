@@ -8,7 +8,7 @@ body{
 	font-size: 16px;
 	background-color: #fff;
 	color: #333;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Gentium Basic', serif;
 	-webkit-font-smoothing: antialiased;
 }
 div{
@@ -18,16 +18,16 @@ ul{
 	list-style: none;
 }
 .content {
-    padding: 0 0.938rem;
+    padding: 0 1rem;
     margin: 0 auto;
     width: 70%;
 }
 .links, h3 {
 	text-align: center;
 }
-h1, h2, h3, nav{
-	font-family: 'Dosis', sans-serif;
-	color: #162440;
+h1, h2, h3, nav a{
+	font-family: 'Open Sans', sans-serif;
+/*	color: #30bec7;*/
 }
 hr{
 	width: 70%;
@@ -38,20 +38,28 @@ hr{
 	width: 45%;
 }
 a{
-	color: #162440;
+	color: #333;
+}
+section p{
+	font-size: 1.5rem;
+	line-height: 1.75rem;
 }
 
 
 /*main image*/
 .name{
-	background-height: 100rem;
 	background-image: url('../images/banner.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 30em;
+	height: 40rem;
 }
 .name-text{
-	padding: 11rem 0 0 10rem;
+	margin: 2rem 0 0 10rem;
+	padding: 11rem 2rem;
+	display: inline-block;
+/*	width: 33%;
+	background-color: rgba(255, 255, 255, .25);
+	border-radius: .25rem;*/
 }
 h1{
 	font-size: 4rem;
@@ -65,22 +73,23 @@ h2{
 
 /*navigation*/
 nav{
-	background-color: #162440;
+/*	background-color: #30bec7;*/
 	height: 4rem;
+	margin-top: -.75rem;
+	border-bottom: solid 1px #333;
 }
 nav .links{
 	font-size: 1.25rem;
 	padding-left: 0;
-	margin-top: .5rem;
-	margin: 0;
+	margin: .5rem 0;
 }
 nav .links li{
 	display: inline-block;
 	background-color: #fff;
 	padding: .5rem 1rem;
 	font-weight: bold;
-	margin: .75rem .75rem 0 .75rem;
-	border-radius: 2rem;
+	margin: .75rem;
+	border-radius: .25rem;
 }
 nav .links li:hover{
 	background-color: #b5d2e9;
@@ -89,8 +98,9 @@ nav .links li:hover{
 /*project area*/
 h3{
 	font-size: 2rem;
+	color: #30bec7;
 }
-.projects img{
+#projects img{
 	height: 20rem;
 	border: solid 1px #333;
 	margin: 1rem;
@@ -109,7 +119,7 @@ h3{
 /*footer*/
 footer{
 	height: 4rem;
-	background-color: #162440; 
+	background-color: #30bec7; 
 	margin-top: 4rem;
 }
 
