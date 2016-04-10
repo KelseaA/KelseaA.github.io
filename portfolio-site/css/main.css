@@ -1,125 +1,110 @@
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16px;
 }
 body{
-	font-size: 16px;
-	background-color: #fff;
-	color: #333;
-	font-family: 'Gentium Basic', serif;
-	-webkit-font-smoothing: antialiased;
-}
-div{
-/*	border: solid black 1px;*/
-}
-ul{
-	list-style: none;
-}
-.content {
-    padding: 0 1rem;
-    margin: 0 auto;
-    width: 70%;
-}
-.links, h3 {
-	text-align: center;
-}
-h1, h2, h3, nav a{
 	font-family: 'Open Sans', sans-serif;
-/*	color: #30bec7;*/
-}
-hr{
-	width: 70%;
-	margin-bottom: 3rem;
 	color: #333;
+/*	line-height: 1.5rem;*/
 }
-.column1{
-	width: 45%;
+section{
+	margin-top: 2rem;
 }
-a{
-	color: #333;
+/*header styling*/
+h1, h2, h3, nav{
+	font-family: 'Montserrat', sans-serif;
+	padding: 0;
+	margin: 0;
 }
-section p{
-	font-size: 1.5rem;
-	line-height: 1.75rem;
-}
-
-
-/*main image*/
-.name{
-	background-image: url('../images/banner.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 40rem;
-}
-.name-text{
-	margin: 2rem 0 0 10rem;
-	padding: 11rem 2rem;
-	display: inline-block;
-/*	width: 33%;
-	background-color: rgba(255, 255, 255, .25);
-	border-radius: .25rem;*/
+h1, h2, h3, footer{
+	text-align: center;
 }
 h1{
 	font-size: 4rem;
-	margin: 0;
+}
+h2, h3{
+	font-size: 2rem;
+}
+header{
+	background-image: url("../images/skyline.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: right bottom;
+	height: 20rem;
+}
+#logo{
+	height: 75px;
+	width: 75px;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+.left-header{
+	background-color: #D1E5E4;
+	height: 20rem;
+	display: inline-block;
+}
+.right-header{
+	display: inline-block;
+}
+.header-text {
+	margin-left: 18rem;
+}
+/*nav styling*/
+nav{
+	display: inline-block;
+	margin-top: 6.5rem;
+}
+nav a{
+	display: block;
+	text-decoration: none;
+	color: #333;
+	padding: 1rem;
+	margin: 0 1rem;
+}
+nav a:hover{
+	background-color: #FFB0B0;
+	color: #fff;
+	font-weight: bold;
+}
+/*about styling*/
+.about{
+	height: 25rem;
+}
+.about-content, .contact{
+	width: 60%;
+	margin: 0 auto;
 }
 h2{
-	font-size: 2.75rem;
-	margin: 0;
+	margin: 2rem;
 }
-
-
-/*navigation*/
-nav{
-/*	background-color: #30bec7;*/
-	height: 4rem;
-	margin-top: -.75rem;
-	border-bottom: solid 1px #333;
+.about-content img{
+	height: 18rem;
+	margin-right: 4rem;
+	float: left;
 }
-nav .links{
-	font-size: 1.25rem;
-	padding-left: 0;
-	margin: .5rem 0;
+p{
+	line-height: 1.75rem;
 }
-nav .links li{
-	display: inline-block;
-	background-color: #fff;
-	padding: .5rem 1rem;
-	font-weight: bold;
-	margin: .75rem;
-	border-radius: .25rem;
+.about-content p:last-child{
+	margin-top: 2rem;
 }
-nav .links li:hover{
-	background-color: #b5d2e9;
+/*projects styling*/
+.projects{
+	background-color: #EAF4F3;
+	height: 35rem;
 }
-
-/*project area*/
-h3{
-	font-size: 2rem;
-	color: #30bec7;
+.projects h2{
+	padding-top: 2rem;
 }
-#projects img{
-	height: 20rem;
-	border: solid 1px #333;
-	margin: 1rem;
-}
-.project-images{
-	text-align: center;
-}
-
-
-/*about area*/
-
-/*skills area*/
-
-/*contact area*/
-
-/*footer*/
+/*contact me styling*/
+/*footer styling*/
 footer{
+	background-color: #D1E5E4;
 	height: 4rem;
-	background-color: #30bec7; 
-	margin-top: 4rem;
+	margin-top: 3rem;
 }
-
+footer p{
+	padding-top: 1rem;
+}
