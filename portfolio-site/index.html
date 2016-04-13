@@ -5,6 +5,7 @@
 	<title>Kelsea Anderson | Web Developer</title>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -42,10 +43,33 @@
 	</section>
 	<section class="contact">
 		<h2>Contact Me</h2>
-		<p>Please feel free to reach out to me with any questions, comments, or requests. I respond quickly to emails at andersonkelsea@gmail.com. All of my projects can be found at GitHub at KelseaA.</p>
-		<div class="icons">
-			<i></i>
+		<div class="contact-p">
+			<p>Please feel free to reach out to me with any questions, comments, or requests. You can email me directly at andersonkelsea@gmail.com or fill out the form below. All of my projects can be found at GitHub at KelseaA.</p>
 		</div>
+		<div class="icons">
+			<div class="top-row">
+				<a href="mailto:andersonkelsea@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+				<a href="https://github.com/KelseaA" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+			</div>
+			<div class="bottom-row">
+				<a href="https://www.linkedin.com/in/kelseaanderson" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/KelseaAnderson" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		<div class="contact-area">
+			<form method="post" action="contactengine.php">
+				Name:<br>
+				<input type="text" name="Name" id="name" />
+				<br>
+				Email:<br>
+				<input type="text" name="Email" id="email" />
+				<br>
+				Message:<br>
+				<textarea name="Message" rows="20" cols="20" id="message"></textarea>
+				<br>
+				<input type="submit" name="submit" value="Submit" class="submit-button" />
+			</form>
+		<div style="clear: both;"></div>
 	</section>
 	<footer>
 		<p>Created by Kelsea Anderson 2016</p>

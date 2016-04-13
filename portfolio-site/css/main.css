@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 	font-size: 16px;
 }
+*:focus{
+	outline: none;
+}
+a{
+	color: #333;
+}
 body{
 	font-family: 'Open Sans', sans-serif;
 	color: #333;
@@ -18,7 +24,7 @@ h1, h2, h3, nav{
 	padding: 0;
 	margin: 0;
 }
-h1, h2, h3, footer{
+h1, h2, h3, footer, i, label{
 	text-align: center;
 }
 h1{
@@ -44,6 +50,7 @@ header{
 	background-color: #D1E5E4;
 	height: 20rem;
 	display: inline-block;
+	padding-top: 6.5rem;
 }
 .right-header{
 	display: inline-block;
@@ -54,7 +61,6 @@ header{
 /*nav styling*/
 nav{
 	display: inline-block;
-	margin-top: 6.5rem;
 }
 nav a{
 	display: block;
@@ -90,6 +96,22 @@ p{
 .about-content p:last-child{
 	margin-top: 2rem;
 }
+/*contact area divs*/
+.contact-p, .icons, .contact-area{
+	display: inline-block;
+}
+.contact-p{
+	width: 55%;
+	margin-right: 5rem;
+}
+/*.icons{
+	width: 45%;
+}*/
+/*icons styling*/
+i{
+	font-size: 3rem !important;
+	margin: 1rem 2rem;
+}
 /*projects styling*/
 .projects{
 	background-color: #EAF4F3;
@@ -98,6 +120,31 @@ p{
 .projects h2{
 	padding-top: 2rem;
 }
+/*contact box styling*/
+.contact-area {
+	width: 50%;
+	margin-top: 2rem;
+}
+.contact-area input, .contact-area textarea {
+	padding: .25rem;
+	width: 100%;
+	margin-bottom: 1.5rem;
+	border: 2px solid #ccc;
+}
+#message{
+	margin-bottom: 1rem;
+}
+
+.contact-area textarea {
+	height: 5rem;
+}
+
+.contact-area input.submit-button {
+	width: 6rem;
+	margin-bottom: 0;
+	right: 0;
+}
+
 /*contact me styling*/
 /*footer styling*/
 footer{
