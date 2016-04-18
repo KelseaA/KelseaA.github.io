@@ -291,9 +291,6 @@ footer p{
 	.about-content img{
 		display: none;
 	}
-	i{
-		margin: 1rem 3rem 2rem 0;
-	}
 	.contact-content-wrapper{
 		display: inline-block;
 	}
@@ -306,6 +303,7 @@ footer p{
 	}
 	.icons{
 		text-align: center;
+		margin-bottom: 2rem;
 	}
 	.contact-area{
 		width: 100%;
@@ -317,5 +315,16 @@ footer p{
 	}
 	i{
 		font-size: 2rem !important;
+	}
+}
+@media only screen and (max-width: 400px){
+	h1{
+		font-size: 2rem;
+	}
+	h3{
+		font-size: 1.25rem;
+	}
+	.header-text{
+		padding-top: 5.25rem;
 	}
 }
