@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Kelsea Anderson | Web Developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="images/logo.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
@@ -90,16 +90,16 @@
 			<div class="contact-area contact-column2">
 				<form method="post" name="contactform" action="contact.php">
 					<p>
-						<label for='name'>Your Name:</label> <br>
-						<input type="text" name="name">
+						<label for='name'>Your Name*:</label> <br>
+						<input class="required" type="text" name="name">
 					</p>
 					<p>
-						<label for='email'>Email Address:</label> <br>
-						<input type="text" name="email"> <br>
+						<label for='email'>Email Address*:</label> <br>
+						<input class="required" type="text" name="email"> <br>
 					</p>
 					<p>
-						<label for='message'>Message:</label> <br>
-						<textarea name="message" id="message"></textarea>
+						<label for='message'>Message*:</label> <br>
+						<textarea class="required" name="message" id="message"></textarea>
 					</p>
 					<input type="submit" value="Submit" class="submit-button"><br>
 				</form>
