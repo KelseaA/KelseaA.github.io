@@ -295,14 +295,27 @@ footer p{
 		margin: 1rem 3rem 2rem 0;
 	}
 	.contact-content-wrapper{
-		flex-direction: column;
+		display: inline-block;
+	}
+	.contact-column1{
+		width: 100%;
+	}
+	.contact-p{
+		margin-right: 0;
+		width: 100%;
+	}
+	.icons{
+		text-align: center;
+	}
+	.contact-area{
+		width: 100%;
 	}
 }
-@media only screen and (max-width: 570px){
-	.contact-content-wrapper{
-		flex-direction: column;
+@media only screen and (max-width: 460px){
+	h1{
+		font-size: 2.75rem;
 	}
-}
-@media only screen and (max-width: 450px){
-
+	i{
+		font-size: 2rem !important;
+	}
 }
