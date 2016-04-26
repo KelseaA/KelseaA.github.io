@@ -13,11 +13,20 @@ a{
 body{
 	font-family: 'Open Sans', sans-serif;
 	color: #333;
+	position: relative;
 }
 section{
 	margin-top: 2rem;
 }
-
+.pointer
+{
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 
 /*header styling*/
 h1, h2, h3, nav{
@@ -90,17 +99,6 @@ nav a:hover{
 	width: 65%;
 	margin: 0 auto;
 }
-.about-content{
-	/*display: -webkit-flex;*/ /* Safari */
-   /* -webkit-flex-wrap: wrap;*/ /* Safari 6.1+ */
-/*    display: flex;  
-    flex-direction: row; 
-    flex-wrap: wrap;*/
-}
-.about-p{
-/*	display: flex;
-	flex-direction: column;*/
-}
 h2{
 	margin: 2rem;
 }
@@ -135,11 +133,24 @@ p{
 }
 .project-box{
 	width: 25%;
-	margin: 2rem;
+	margin: 1rem;
+	padding: 1rem;
 	display: inline-block;
+}
+.project-box:hover{
+	margin: 2rem !important;
+	padding: 0 !important;
 }
 .project-box p{
 	text-align: center;
+}
+.transition
+{
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 
@@ -162,7 +173,7 @@ p{
 }
 
 /*icons styling*/
-i{
+.icons i{
 	font-size: 2.5rem !important;
 	margin: 2rem 4rem 1rem 0;
 }
@@ -223,12 +234,60 @@ footer{
 	background-color: #D1E5E4;
 	height: 4rem;
 	margin-top: 3rem;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
 }
 footer p{
 	padding-top: 1rem;
 }
 
+/*project pages styling*/
+/*.project-page-header{
+	width: 100%;
+	height: 6.5rem;
+	background-color: #D1E5E4;
+	display: inline;
+}
+.project-page-header nav{
+	margin-top: 2.3rem; 
+	margin-left: 40%;
+}
+.project-page-header a{
+	display: inline;
+	font-size: 1.35rem;
+}*/
+.project-page-header{
+	margin-top: 0;
+}
+.project-page-header #logo{
+	float: left;
+	margin: 0 0 0 1rem;
+}
+.project-page-h2{
+	background-color: #D1E5E4;
+	margin: 0;
+	padding: 1rem;
+	width: 100%;
+}
+.project-page-wrapper{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
 
+}
+.project-page-thumbnail, .project-page-description{
+	width: 35%;
+	margin: 2rem;
+}
+.project-page-wrapper i{
+	font-size: 2.5rem !important;
+	margin: 10rem 1rem !important;
+}
+
+	
 
 /*media queries*/
 @media only screen and (max-width: 1265px){
