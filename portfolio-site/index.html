@@ -11,106 +11,107 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-	<header>
-		<div class="left-header">
-			<a href="index.html"><img id="logo" src="images/logo.png" alt="Logo Image"></a>
-			<nav>
-				<a href="#">Home</a>
-				<a href="#about">About Me</a>
-				<a href="#projects">Projects</a>
-				<a href="#contact">Contact Me</a>
-			</nav>
-		</div>
-		<div class="right-header">
-			<div class="header-text">
-				<h1>Kelsea Anderson</h1>
-				<h3>Front end web developer</h3>
+	<div class="body-wrapper">
+		<header>
+			<div class="left-header">
+				<a href="index.html"><img class="logo" src="images/logo.png" alt="Logo Image"></a>
+				<nav>
+					<a href="#">Home</a>
+					<a href="#about">About Me</a>
+					<a href="#projects">Projects</a>
+					<a href="#contact">Contact Me</a>
+				</nav>
 			</div>
-		</div>
-	</header>
-
-
-	<section class="about" id="about">
-		<h2>About Me</h2>
-		<div class="about-content">
-			<img src="images/headshot.JPG" alt="Image of Kelsea Anderson">
-			<div class="about-p">
-				<p>I'm an aspiring front end web developer living in NYC. I grew up in a small town just outside of Columbus, Ohio and went to school in St. Louis, Missouri before betraying my thoroughly Midwestern 	roots by moving to the East Coast. I worked in the fashion industy for several years before discovering that web development was my passion.</p>
-				<p>I am a student at Thinkful's Web Development Career Path. I have learned HTML, CSS, JavaScript, and JQuery. Before the course is finished, I will have also learned Node, Angular and React. I love learning new technologies and am very excited to be embarking on a career that is constantly evolving.</p>
-				<!-- <p>I am a graduate of Thinkful’s Web Development Career Path. Throughout the course I learned HTML, CSS, JavaScript, JQuery, Node, Angular, and React. I love learning new technologies and am very excited to be embarking on a career that is constantly evolving.</p> -->
-			</div>
-		</div>
-	</section>
-
-
-	<section class="projects-wrapper" id="projects">
-		<h2>Projects</h2>
-		<div class="project-box transition">
-			<a href="http://kelseaa.github.io/karma-clone" target="_blank"><img class="project-thumbnail" src="images/karmaclone-thumbnail.jpg" alt="Thumbnail image of Karma Clone Site"></a>
-			<p>Clone of Karma Site</p>
-		</div>
-		<div class="project-box transition">
-			<a href="http://kelseaa.github.io/shopping-list/" target="_blank"><img class="project-thumbnail" src="images/shoppinglist-thumbnail.jpg" alt="Thumbnail image of Shopping List App"></a>
-			<p>Shopping List App</p>
-		</div>
-		<div class="project-box transition">
-			<a href="http://kelseaa.github.io/hot-or-cold/" target="_blank"><img class="project-thumbnail" src="images/hotorcold-thumbnail.jpg" alt="Thumbnail image of Hot or Cold App"></a>
-			<p>Hot or Cold App</p>
-		</div>
-		<div class="project-box transition">
-			<a href="http://kelseaa.github.io/quiz-app/" target="_blank"><img class="project-thumbnail" src="images/quiz-thumbnail.jpg" alt="Thumbnail image of Quiz App"></a>
-			<p>Fashion Quiz</p>
-		</div>
-		<div class="project-box transition">
-			<a href="http://kelseaa.github.io/stackerAJAX/" target="_blank"><img class="project-thumbnail" src="images/stackerAJAX-thumbnail.jpg" alt="Thumbnail image of stackerAJAX search"></a>
-			<p>Stack Overflow API Hack</p>
-		</div>
-		<div class="project-box transition">
-			<a href="http://kelseaa.github.io/api-hack/" target="_blank"><img class="project-thumbnail" src="images/seatgeek-thumbnail.jpg" alt="Thumbnail image of Seat Geek API"></a>
-			<p>Seat Geek API Hack</p>
-		</div>
-	</section>
-
-
-	<section class="contact" id="contact">
-		<h2>Contact Me</h2>
-		<div class="contact-content-wrapper">
-			<div class="contact-column1">
-				<div class="contact-p">
-				<p>Please feel free to reach out to me with any questions, comments, or requests. You can email me directly using the email link below or by filling out the contact form. All of my projects can be found at GitHub at KelseaA.</p>
-				</div>
-				<div class="icons">
-					<a href="mailto:andersonkelsea@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-					<a href="https://github.com/KelseaA" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-					<a href="https://www.linkedin.com/in/kelseaanderson" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-					<a href="https://twitter.com/KelseaAnderson" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<div class="right-header">
+				<div class="header-text">
+					<h1>Kelsea Anderson</h1>
+					<h3>Front-end web developer</h3>
 				</div>
 			</div>
+		</header>
 
-			<div class="contact-area contact-column2">
-				<form method="post" name="contactform" action="contact.php">
-					<p>
-						<label for='name'>Your Name*:</label> <br>
-						<input class="required" type="text" name="name">
-					</p>
-					<p>
-						<label for='email'>Email Address*:</label> <br>
-						<input class="required" type="text" name="email"> <br>
-					</p>
-					<p>
-						<label for='message'>Message*:</label> <br>
-						<textarea class="required" name="message" id="message"></textarea>
-					</p>
-					<input type="submit" value="Submit" class="submit-button"><br>
-				</form>
+
+		<section class="about" id="about">
+			<h2>About Me</h2>
+			<div class="about-content">
+				<img src="images/headshot.JPG" alt="Image of Kelsea Anderson">
+				<div class="about-p">
+					<p>I'm an aspiring front-end web developer living in NYC. I grew up in a small town just outside of Columbus, Ohio and went to school in St. Louis, Missouri before betraying my thoroughly Midwestern 	roots by moving to the East Coast. I worked in the fashion industy for several years before discovering that web development was my passion.</p>
+					<p>I am a student at Thinkful's Web Development Career Path. I have learned HTML, CSS, JavaScript, and JQuery. Before the course is finished, I will have also learned Node, Angular and React. I love learning new technologies and am very excited to be embarking on a career that is constantly evolving.</p>
+					<!-- <p>I am a graduate of Thinkful’s Web Development Career Path. Throughout the course I learned HTML, CSS, JavaScript, JQuery, Node, Angular, and React. I love learning new technologies and am very excited to be embarking on a career that is constantly evolving.</p> -->
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<footer>
-		<p>Created by Kelsea Anderson 2016</p>
-	</footer>
+
+		<section class="projects-wrapper" id="projects">
+			<h2>Projects</h2>
+			<div class="project-box transition">
+			<a href="pages/karma-clone.html" target="_blank"><img class="project-thumbnail" src="images/karmaclone-thumbnail.jpg" alt="Thumbnail image of Karma Clone Site"></a>
+				<p>Clone of Karma Site</p>
+			</div>
+			<div class="project-box transition">
+				<a href="http://kelseaa.github.io/shopping-list/" target="_blank"><img class="project-thumbnail" src="images/shoppinglist-thumbnail.jpg" alt="Thumbnail image of Shopping List App"></a>
+				<p>Shopping List App</p>
+			</div>
+			<div class="project-box transition">
+				<a href="http://kelseaa.github.io/hot-or-cold/" target="_blank"><img class="project-thumbnail" src="images/hotorcold-thumbnail.jpg" alt="Thumbnail image of Hot or Cold App"></a>
+				<p>Hot or Cold App</p>
+			</div>
+			<div class="project-box transition">
+				<a href="http://kelseaa.github.io/quiz-app/" target="_blank"><img class="project-thumbnail" src="images/quiz-thumbnail.jpg" alt="Thumbnail image of Quiz App"></a>
+				<p>Fashion Quiz</p>
+			</div>
+			<div class="project-box transition">
+				<a href="http://kelseaa.github.io/stackerAJAX/" target="_blank"><img class="project-thumbnail" src="images/stackerAJAX-thumbnail.jpg" alt="Thumbnail image of stackerAJAX search"></a>
+				<p>Stack Overflow API Hack</p>
+			</div>
+			<div class="project-box transition">
+				<a href="http://kelseaa.github.io/api-hack/" target="_blank"><img class="project-thumbnail" src="images/seatgeek-thumbnail.jpg" alt="Thumbnail image of Seat Geek API"></a>
+				<p>Seat Geek API Hack</p>
+			</div>
+		</section>
+
+
+		<section class="contact" id="contact">
+			<h2>Contact Me</h2>
+			<div class="contact-content-wrapper">
+				<div class="contact-column1">
+					<div class="contact-p">
+						<p>Please feel free to reach out to me with any questions, comments, or requests. You can email me directly using the email link below or by filling out the contact form. All of my projects can be found at GitHub at KelseaA.</p>
+					</div>
+					<div class="icons">
+						<a href="mailto:andersonkelsea@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+						<a href="https://github.com/KelseaA" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+						<a href="https://www.linkedin.com/in/kelseaanderson" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/KelseaAnderson" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					</div>
+				</div>
+
+				<div class="contact-area contact-column2">
+					<form method="post" name="contactform" action="contact.php">
+						<p>
+							<label for='name'>Your Name*:</label> <br>
+							<input class="required" type="text" name="name">
+						</p>
+						<p>
+							<label for='email'>Email Address*:</label> <br>
+							<input class="required" type="text" name="email"> <br>
+						</p>
+						<p>
+							<label for='message'>Message*:</label> <br>
+							<textarea class="required" name="message" id="message"></textarea>
+						</p>
+						<input type="submit" value="Submit" class="submit-button"><br>
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+		<footer>
+			<p>Created by Kelsea Anderson 2016</p>
+		</footer>
+		
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 </body>

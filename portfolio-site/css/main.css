@@ -9,11 +9,17 @@
 }
 a{
 	color: #333;
+	text-decoration: none;
+}
+html, body{
+	height: 100%
 }
 body{
 	font-family: 'Open Sans', sans-serif;
 	color: #333;
-	position: relative;
+}
+.body-wrapper {
+	min-height:100%;
 }
 section{
 	margin-top: 2rem;
@@ -66,11 +72,11 @@ header, .right-header{
 	flex-direction: column;
 	align-content: center;
 }
-#logo{
+.logo{
 	height: 75px;
 	width: 75px;
 	margin-left: 1rem;
-	margin-top: 1rem;
+	margin-top: .25rem;
 }
 .header-text {
 	padding-top: 5rem;
@@ -81,8 +87,6 @@ header, .right-header{
 
 nav a{
 	display: flex;
-	text-decoration: none;
-	color: #333;
 	padding: 1rem;
 	margin: 0 1rem;
 	width: 50%;
@@ -181,6 +185,10 @@ i:hover{
 	color: #FFB0B0;
 }
 
+.contact, .project-page-wrapper{
+	padding-bottom: 6rem;
+}
+
 /*contact form*/
 .contact-area {
 	width: 75%;
@@ -215,7 +223,6 @@ input.submit-button{
 input.submit-button:hover{
 	background-color: #D1E5E4;
 	color: #333;
-
 }
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
@@ -233,42 +240,28 @@ input:-webkit-autofill {
 footer{
 	background-color: #D1E5E4;
 	height: 4rem;
-	margin-top: 3rem;
-	position: absolute;
-	width: 100%;
-	bottom: 0;
+	margin-top: -4rem;
+	position: relative;
+	clear: both;
 }
 footer p{
 	padding-top: 1rem;
 }
 
 /*project pages styling*/
-/*.project-page-header{
-	width: 100%;
-	height: 6.5rem;
-	background-color: #D1E5E4;
-	display: inline;
-}
-.project-page-header nav{
-	margin-top: 2.3rem; 
-	margin-left: 40%;
-}
-.project-page-header a{
-	display: inline;
-	font-size: 1.35rem;
-}*/
 .project-page-header{
+	background-color: #D1E5E4;
+	width: 100%;
+	height: 5rem;
 	margin-top: 0;
+	margin-bottom: 6rem;
 }
-.project-page-header #logo{
+.project-page-header .logo{
 	float: left;
-	margin: 0 0 0 1rem;
 }
 .project-page-h2{
-	background-color: #D1E5E4;
 	margin: 0;
-	padding: 1rem;
-	width: 100%;
+	padding: 1.25rem;
 }
 .project-page-wrapper{
 	width: 100%;
@@ -276,15 +269,47 @@ footer p{
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
-
+	padding-bottom: 4rem;
+	overflow:auto;
 }
-.project-page-thumbnail, .project-page-description{
+.inner-wrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.project-page-thumbnail-wrapper, .project-page-description{
 	width: 35%;
 	margin: 2rem;
+}
+.project-thumbnail{
+	border: 1px solid #333;
 }
 .project-page-wrapper i{
 	font-size: 2.5rem !important;
 	margin: 10rem 1rem !important;
+}
+.project-links{
+	text-align: center;
+}
+.project-links a{
+	display: inline-block;
+	width: 45%;
+	margin-top: 2rem;
+	padding: .5rem;
+	border: none;
+	background-color: #FFB0B0;
+	color: #fff;
+}
+.project-links a:first-child{
+	margin-right: 4%;
+}
+.project-links a:last-child{
+	margin-left: 4%;
+}
+.project-links a:hover{
+	background-color: #D1E5E4;
+	color: #333;
 }
 
 	
@@ -328,6 +353,17 @@ footer p{
 	i{
 		margin: 1rem 2.5rem 1rem 0;
 	}
+	.inner-wrapper{
+		flex-direction: column;
+	}
+	.project-page-thumbnail-wrapper, .project-page-description{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.project-page-description{
+		margin-top: 4rem;
+		margin-bottom: 6rem;
+	}
 }
 @media only screen and (max-width: 710px){
 	.right-header{
@@ -370,6 +406,9 @@ footer p{
 	}
 	.contact-area{
 		width: 100%;
+	}
+	.project-page-h2{
+		padding: 1.5rem 0;
 	}
 }
 @media only screen and (max-width: 460px){
