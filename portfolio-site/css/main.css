@@ -179,7 +179,7 @@ p{
 /*icons styling*/
 .icons i{
 	font-size: 2.5rem !important;
-	margin: 2rem 4rem 1rem 0;
+	margin: 2rem 3.75rem 1rem 0;
 }
 i:hover{
 	color: #FFB0B0;
@@ -333,7 +333,7 @@ footer p{
 		width: 85%;
 	}
 	i{
-		margin: 1rem 3rem 1rem 0;
+		margin-right: 3rem !important;
 	}
 }
 @media only screen and (max-width: 855px){
@@ -353,7 +353,7 @@ footer p{
 		width: 40%;
 	}
 	i{
-		margin: 1rem 2.5rem 1rem 0;
+		margin-right: 2.5rem !important;
 	}
 	.inner-wrapper{
 		flex-direction: column;
@@ -367,7 +367,7 @@ footer p{
 		margin-bottom: 6rem;
 	}
 }
-@media only screen and (max-width: 710px){
+@media only screen and (max-width: 720px){
 	.right-header{
 		width: 100%;
 		height: 15rem;
@@ -379,7 +379,7 @@ footer p{
 		display: none;
 	}
 	i{
-		margin: 1rem 2rem 1rem 0;
+		margin-right: 2rem !important;
 	}
 }
 @media only screen and (max-width: 670px){
@@ -415,13 +415,17 @@ footer p{
 	.project-page-wrapper{
 		padding: 0 1rem;
 	}
+	i{
+		margin-right: 3.5rem !important;
+	}
 }
-@media only screen and (max-width: 460px){
+@media only screen and (max-width: 465px){
 	h1{
 		font-size: 2.75rem;
 	}
 	i{
 		font-size: 2rem !important;
+		margin-right:2.5rem !important;
 	}
 }
 @media only screen and (max-width: 400px){
