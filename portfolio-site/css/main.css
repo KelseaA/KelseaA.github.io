@@ -49,20 +49,35 @@ h1{
 h2, h3{
 	font-size: 2rem;
 }
-header, .right-header{
+header{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 }
 .right-header{
-	background-image: url("../images/skyline.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-    background-position: right bottom;
+	background-color: #EAF4F3;
 	height: 20rem;
 	width: 80%;
 	justify-content: center;
 	align-content: center;
+}
+svg{
+	height: 20rem;
+	width: 100%;
+	overflow: hidden;
+}
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.skyline-outline{
+	stroke: #333;
+	stroke-width: 4.15;
+	stroke-dasharray: 17000;
+	stroke-dashoffset: 17000;
+	
+	animation: offset 8s linear forwards;
 }
 .left-header{
 	background-color: #D1E5E4;
