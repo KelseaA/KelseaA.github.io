@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/favicon.png" type="image/x-icon">
 	<meta name="pinterest" content="nopin" />
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
@@ -17,10 +17,10 @@
 			<div class="left-header">
 				<a href="index.html"><img class="logo" src="images/logo.png" alt="Logo Image"></a>
 				<nav>
-					<a href="#">Home</a>
-					<a href="#about">About</a>
-					<a href="#projects">Projects</a>
-					<a href="#contact">Contact</a>
+					<a class="smooth-scroll-link" href="#">Home</a>
+					<a class="smooth-scroll-link" href="#about">About</a>
+					<a class="smooth-scroll-link" href="#projects">Projects</a>
+					<a class="smooth-scroll-link" href="#contact">Contact</a>
 				</nav>
 			</div>
 			<div class="right-header">
@@ -121,8 +121,8 @@
 			<img src="images/headshot.JPG" alt="Image of Kelsea Anderson">
 			<div class="about-p">
 				<p>I'm an aspiring front-end web developer living in NYC. I grew up in a small town just outside of Columbus, Ohio and went to school in St. Louis, Missouri before betraying my thoroughly Midwestern 	roots by moving to the East Coast. I worked in the fashion industry for several years before discovering that web development was my passion.</p>
-				<p>I am a student at Thinkful's Web Development Bootcamp. I have learned HTML, CSS, JavaScript, JQuery, and Node. Before the course is finished, I will have also learned React. I love learning new technologies and am very excited to be embarking on a career that is constantly evolving.</p>
-				<!-- <p>I am a graduate of Thinkful’s Web Development Bootcamp. Throughout the course I learned HTML, CSS, JavaScript, JQuery, Node, and React. I love learning new technologies and am very excited to be embarking on a career that is constantly evolving.</p> -->
+<!-- 				<p>I am a student at Thinkful's Web Development Bootcamp. I have learned HTML, CSS, JavaScript, jQuery, and Node. Before the course is finished, I will have also learned React. I love learning new technologies and am very excited to be embarking on a career that is constantly evolving.</p> -->
+				<p>I am a graduate of Thinkful’s Web Development Bootcamp. Throughout the course I learned <span class="bold">HTML5</span>, <span class="bold">CSS3</span>, <span class="bold">JavaScript</span>, <span class="bold">jQuery</span>, <span class="bold">Node</span>, and <span class="bold">React</span>. I love learning new technologies and am very excited to be embarking on a career that is constantly evolving.</p>
 			</div>
 		</div>
 	</section>
@@ -130,26 +130,13 @@
 
 	<section class="projects-wrapper" id="projects">
 		<h2>Projects</h2>
-		<div class="project-box">
-			<div class="project slide">
-				<img class="project-thumbnail" src="images/seatgeek-thumbnail.jpg" alt="Thumbnail image of Seat Geek API">
-				<div class="project-overlay">
-					<h4>Seat Geek API Search</h4>
-					<p>This project allows the user to search for artists or performers using the SeatGeek API. It uses HTML, CSS, JavaScript, and JQuery</p>
-					<div class="link-wrapper">
-						<a class="project-link" href="http://kelseaa.github.io/api-hack" target="_blank">Demo</a>
-						<a class="project-link" href="https://github.com/KelseaA/api-hack" target="_blank">Github</a>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<div class="project-box">
 			<div class="project slide">
 				<img class="project-thumbnail" src="images/pictionary-thumbnail.jpg" alt="Thumbnail of Pictionary Game">
 				<div class="project-overlay">
 					<h4>Pictionary Game</h4>
-					<p>This is a pictionary game where one user is drawing and the rest try to guess the secret word. Once a user guesses correctly, a new game is started and that user becomes the new person drawing. It uses HTML, CSS, JavaScript, JQuery, and Node.</p>
+					<p>This is a pictionary game where one user is drawing and the rest try to guess the secret word. Once a user guesses correctly, a new game is started and that user becomes the new person drawing. It uses HTML, CSS, JavaScript, jQuery, and Node.</p>
 					<div class="link-wrapper">
 						<a class="project-link" href="https://conservative-celsius-10401.herokuapp.com/" target="_blank">Demo</a>
 						<a class="project-link" href="https://github.com/KelseaA/pictionary-challenge" target="_blank">Github</a>
@@ -160,10 +147,24 @@
 		
 		<div class="project-box">
 			<div class="project slide">
+				<img class="project-thumbnail" src="images/seatgeek-thumbnail.jpg" alt="Thumbnail image of Seat Geek API">
+				<div class="project-overlay">
+					<h4>Seat Geek API Search</h4>
+					<p>This project allows the user to search for artists or performers using the SeatGeek API. It uses HTML, CSS, JavaScript, and jQuery</p>
+					<div class="link-wrapper">
+						<a class="project-link" href="http://kelseaa.github.io/api-hack" target="_blank">Demo</a>
+						<a class="project-link" href="https://github.com/KelseaA/api-hack" target="_blank">Github</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="project-box">
+			<div class="project slide">
 				<img class="project-thumbnail" src="images/shoppinglist-thumbnail.jpg" alt="Thumbnail image of Shopping List App">
 				<div class="project-overlay">
 					<h4>Shopping List App</h4>
-					<p>This is a shopping list app that allows the user to add items, check off items, and delete items. It uses HTML, CSS, JavaScript, and JQuery.</p>
+					<p>This is a shopping list app that allows the user to add items, check off items, and delete items. It uses HTML, CSS, JavaScript, and jQuery.</p>
 					<div class="link-wrapper">
 						<a class="project-link" href="http://kelseaa.github.io/shopping-list" target="_blank">Demo</a>
 						<a class="project-link" href="https://github.com/KelseaA/shopping-list" target="_blank">Github</a>
@@ -177,7 +178,7 @@
 				<img class="project-thumbnail" src="images/quiz-thumbnail.jpg" alt="Thumbnail image of Quiz App">
 				<div class="project-overlay">
 					<h4>Fashion Quiz</h4>
-					<p>This is a quiz that tests the user's knowledge of fashion and gives their score at the end. It uses HTML, CSS, JavaScript, JQuery, and JSON.</p>
+					<p>This is a quiz that tests the user's knowledge of fashion and gives their score at the end. It uses HTML, CSS, JavaScript, jQuery, and JSON.</p>
 					<div class="link-wrapper">
 						<a class="project-link" href="http://kelseaa.github.io/quiz-app" target="_blank">Demo</a>
 						<a class="project-link" href="https://github.com/KelseaA/quiz-app" target="_blank">Github</a>
@@ -186,19 +187,19 @@
 			</div>
 		</div>
 
-<!-- 		<div class="project-box">
+		<div class="project-box">
 			<div class="project slide">
-				<img class="project-thumbnail" src="images/karmaclone-thumbnail.jpg" alt="Thumbnail image of Karma Clone Site">
+				<img class="project-thumbnail" src="images/activity-tracker-thumbnail.jpg" alt="Thumbnail image of React Activity Tracker App">
 				<div class="project-overlay">
-					<h4>Clone of Karma Site</h4>
-					<p>The goal of this project was to create a high fidelity copy of the Karma site using HTML and CSS.</p>
+					<h4>Activity Tracker</h4>
+					<p>Activity tracker app that uses React</p>
 					<div class="link-wrapper">
-						<a class="project-link" href="http://kelseaa.github.io/karma-clone" target="_blank">Demo</a>
-						<a class="project-link" href="https://github.com/KelseaA/karma-clone" target="_blank">Github</a>
+						<a class="project-link" href="#" target="_blank">Demo</a>
+						<a class="project-link" href="https://github.com/KelseaA/activity-tracker" target="_blank">Github</a>
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 	</section>
 
 
