@@ -8,6 +8,16 @@ $(".contact-area").on("click", ".submit-button", function(event){
 
 //smooth scroll
 $(document).ready(function(){
+  //toggle hamburger menu
+  $(".hamburger").on("click", function() {
+      $(".menu").toggleClass("open");
+      $(this).toggleClass("change");
+  });
+
+  $("nav li").on("click", function(){
+      $(".menu").removeClass("open");
+      $(".hamburger").removeClass("change");
+  });
   // Add smooth scrolling to all links
   $('.smooth-scroll-link').on('click', function(event) {
 

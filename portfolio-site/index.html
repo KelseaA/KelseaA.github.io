@@ -14,15 +14,20 @@
 <body>
 	<div class="body-wrapper">
 		<header>
-			<div class="left-header">
+			<nav class="left-header">
 				<a href="index.html"><img class="logo" src="images/logo.png" alt="Logo Image"></a>
-				<nav>
-					<a class="smooth-scroll-link" href="#">Home</a>
-					<a class="smooth-scroll-link" href="#about">About</a>
-					<a class="smooth-scroll-link" href="#projects">Projects</a>
-					<a class="smooth-scroll-link" href="#contact">Contact</a>
-				</nav>
-			</div>
+				<div href="#" class="hamburger">
+					<div class="line bar1"></div>
+					<div class="line bar2"></div>
+					<div class="line bar3"></div>
+				</div>
+				<ul class="menu">
+					<li><a class="smooth-scroll-link" href="#">Home</a></li>
+					<li><a class="smooth-scroll-link" href="#about">About</a></li>
+					<li><a class="smooth-scroll-link" href="#projects">Projects</a></li>
+					<li><a class="smooth-scroll-link" href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 			<div class="right-header">
 				<div class="header-text">
 					<h1>Kelsea Anderson</h1>
@@ -120,7 +125,7 @@
 		<div class="about-content">
 			<img src="images/headshot.JPG" alt="Image of Kelsea Anderson">
 			<div class="about-p">
-				<p>I'm an aspiring front-end web developer living in NYC. I grew up in a small town just outside of Columbus, Ohio and went to school in St. Louis, Missouri before betraying my thoroughly Midwestern roots by moving to the East Coast. I worked in the fashion industry for several years before discovering that web development was my passion.</p>
+				<p>I'm an aspiring front-end web developer living in NYC. I grew up in a small town just outside of Columbus, Ohio and went to school in St. Louis, Missouri before betraying my thoroughly Midwestern roots by moving to the East Coast. I worked in the fashion industry for several years before discovering that web development is my passion.</p>
 				<p>I have taken intensive courses through General Assembly, Thinkful, and Skillcrush. My skills include <span class="bold">HTML5</span>, <span class="bold">CSS3</span>, <span class="bold">JavaScript</span>, <span class="bold">jQuery</span>, <span class="bold">Node</span>, and <span class="bold">WordPress</span>. I love learning new technologies and am very excited to be embarking on a career that is constantly evolving.</p>
 			</div>
 		</div>
@@ -186,7 +191,7 @@
 			</div>
 		</div>
 
-		<div class="project-box">
+<!-- 		<div class="project-box">
 			<div class="project slide">
 				<img class="project-thumbnail" src="images/activity-tracker-thumbnail.png" alt="Thumbnail image of React Activity Tracker App">
 				<div class="project-overlay">
@@ -198,14 +203,14 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="project-box">
 			<div class="project slide">
 				<img class="project-thumbnail" src="images/lindsey-thumbnail.jpg" alt="Thumbnail image of Lindsey Anderson's Portfolio Site">
 				<div class="project-overlay">
-					<h4>Lindsey B. Anderson Portfolio Website</h4>
-					<p>A portfolio website for Lindsey B. Anderson, a writer and editor.</p>
+					<h4>Lindsey B. Anderson</h4>
+					<p>A portfolio website for Lindsey B. Anderson, a writer and editor. The site uses HTML, CSS, JavaScript, and jQuery.</p>
 					<div class="link-wrapper">
 						<a class="project-link" href="https://kelseaa.github.io/lindsey-portfolio/" target="_blank">Demo</a>
 						<a class="project-link" href="https://github.com/KelseaA/lindsey-portfolio" target="_blank">Github</a>
@@ -234,15 +239,15 @@
 			<div class="contact-area contact-column2">
 				<form method="post" name="contactform" action="contact.php">
 					<p>
-						<label for='name'>Your Name*:</label> <br>
+						<label for='name'>Your Name:</label> <br>
 						<input class="required" type="text" name="name">
 					</p>
 					<p>
-						<label for='email'>Email Address*:</label> <br>
+						<label for='email'>Email Address:</label> <br>
 						<input class="required" type="text" name="email"> <br>
 					</p>
 					<p>
-						<label for='message'>Message*:</label> <br>
+						<label for='message'>Message:</label> <br>
 						<textarea class="required" name="message" id="message"></textarea>
 					</p>
 					<input type="submit" value="Submit" class="submit-button"><br>
