@@ -174,27 +174,35 @@ p{
 .projects-wrapper h2{
 	padding-top: 2rem;
 }
+.projects-wrapper h3{
+	font-size: 1.5rem;
+	margin-top: 3rem;
+}
 .project-thumbnail{
 	width: 100%;
 }
+.project-column{
+	width: 80%;
+	margin: 0 auto;
+}
 .project-box{
-	width: 55%;
-	margin: 1rem;
-	padding: 1rem;
+	width: 49%;
+	padding: 2rem .75rem;
 	display: inline-block;
 }
 .project-box p, .project-box a{
-	text-align: center;
-	font-size: 1.15rem;
-	padding: 0 1rem;
-	line-height: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    line-height: 1.5rem;
 }
-.project-box a{
-	color: #fff;
-	background-color: #FFB0B0;
-	padding: .5rem 2.5rem;
-	border-radius: .5rem;
-	margin: 0 1.5rem;
+.project-box a {
+    color: #fff;
+    background-color: #FFB0B0;
+    padding: .4rem 0;
+    border-radius: 1rem;
+    margin: 0 .5rem;
+    width: 6rem;
 }
 .project-box a:hover{
 	color: #333;
@@ -226,10 +234,10 @@ p{
 	background: rgba(0,0,0, .5);
 }
 .project-overlay h4 {
-	margin-top: 2rem;
-	font-size: 1.75rem;
-	padding: 1.5rem;
-	border-bottom: 2px solid #333;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-bottom: 2px solid #333;
 }
 .slide .project-overlay {
 	opacity: 1;
@@ -373,34 +381,52 @@ footer p{
 	i{
 		margin-right: 3rem !important;
 	}
+	.project-box p, .project-box a{
+	    font-size: 1rem;
+	    line-height: 1.25rem;
+	}
+	.project-box p{
+		padding: 0;
+	}
+	.project-overlay h4 {
+	    margin-top: .5rem;
+	    font-size: 1.25rem;
+	    padding: 1rem;
+	}
 }
 @media all and (max-width: 855px){
 	header h1{
 		font-size: 3rem;
 	}
-	h2, h3{
+	section h2, h3{
 		font-size: 1.5rem;
 	}
 	.header-text {
 		padding-top: 7rem;
 	}
+	.project-column{
+		width: 100%;
+	}
 	.project-box{
 		width: 80%;
+	}
+	.project-overlay h4 {
+	    margin-top: .5rem;
+	    font-size: 1.5rem;
+	}
+	.project-box p, .project-box a {
+	    font-size: 1rem;
+	    line-height: 1.5rem;
+	}
+	.projects-wrapper h3 {
+	    font-size: 1.25rem;
+	    margin-top: 2rem;
 	}
 	i{
 		margin-right: 2.5rem !important;
 	}
 	.inner-wrapper{
 		flex-direction: column;
-	}
-	.project-page-thumbnail-wrapper,
-	.project-page-description{
-		width: 90%;
-		margin: 0 auto;
-	}
-	.project-page-description{
-		margin-top: 4rem;
-		margin-bottom: 6rem;
 	}
 }
 @media all and (max-width: 720px){
@@ -436,21 +462,10 @@ footer p{
 	svg{
 		height: 16rem;
 	}
-	.project-overlay h4 {
-	    margin-top: .5rem;
-	    font-size: 1.5rem;
-	}
-	.project-box p, .project-box a {
-	    font-size: 1rem;
-	    line-height: 1.5rem;
-	}
 }
 @media all and (max-width: 670px){
 	h1{
 		font-size: 2.85rem;
-	}
-	.project-box{
-		width: 80%;
 	}
 	.about-content{
 		flex-direction: column;
@@ -501,7 +516,7 @@ footer p{
 		font-size: 1rem;
 		padding: 0 .75rem;
 		line-height: 1.5rem;
-		padding: .25rem 2rem;
+		padding: .25rem;
 	}
 	.logo{
 		height: 60px;
@@ -595,7 +610,7 @@ footer p{
 		font-size: 1rem;
 		padding: 0 .75rem;
 		line-height: 1.5rem;
-		padding: .25rem 2rem;
+		padding: .25rem;
 	}
 	.project-box p, .project-box a {
 	    font-size: .9rem;
